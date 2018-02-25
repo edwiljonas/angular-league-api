@@ -13,15 +13,17 @@ export interface Config {
 @Injectable()
 export class ManagerService {
 
+  // configUrl = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' +
+      // 'Arc?api_key=RGAPI-fa69152e-78b6-4f6f-bf10-fb31289606a7';
+
   configUrl = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' +
-      'sssasasas?api_key=RGAPI-fa69152e-78b6-4f6f-bf10-fb31289606a7';
+      'BrokenPlayerTest?api_key=RGAPI-fa69152e-78b6-4f6f-bf10-fb31289606a7';
 
   constructor(private http: HttpClient) { }
 
   getConfig() {
       this.http.get(this.configUrl).pipe(
-          catchError(this.handleError)
-      ).toPromise()
+          catchError( this.handleError) ).toPromise()
           .then(
               res => { // Success
                   console.log(res);
@@ -31,12 +33,12 @@ export class ManagerService {
 
   private handleError(error: HttpErrorResponse) {
       if (error.error instanceof ErrorEvent) {
-          console.error('*** An error has occurred in you league API:', error.error.message);
+          console.error('*** An error has occurred in you league API: ', error.error.message);
       } else if (error.status === 404) { // 404 error found handler
           console.error(
             `You have received an ${error.status} error.`
           );
-      } // You can now create a function that controls all error responses via the HANDLeErrorfunction
+      } // You can now create a function that controls all error responses via the handleError function
       return new ErrorObservable(
           'Oops, it exploded... Please try again later.');
   }
