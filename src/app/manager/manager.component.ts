@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Config, ManagerService } from './manager.service';
+import { ManagerService } from './manager.service';
 
 @Component({
   selector: 'app-manager',
@@ -12,7 +12,6 @@ export class ManagerComponent implements OnInit {
 
   title = 'Manager Results';
   object;
-  my_data = [];
 
   constructor(private managerService: ManagerService) { }
 

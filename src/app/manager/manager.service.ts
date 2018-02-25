@@ -5,11 +5,6 @@ import { catchError } from 'rxjs/operators';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 import { isSuccess } from '@angular/http/src/http_utils';
 
-export interface Config {
-  heroesUrl: string;
-  textfile: string;
-}
-
 @Injectable()
 export class ManagerService {
 
