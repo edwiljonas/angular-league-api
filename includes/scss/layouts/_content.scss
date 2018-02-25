@@ -1,0 +1,15 @@
+/*
+* Content Styles
+*/
+.main{
+  display: table;
+  padding: 50px 0;
+  margin: 0 auto;
+  &:after{
+    display: none;
+  }
+}
+.http-results{
+  display: block;
+  padding: 25px 0 25px;
+}
