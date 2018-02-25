@@ -1,23 +1,20 @@
 /*
-* Main Styles
-*/
-/*
 * Misc Styles
 */
-body {
+body{
   font-family: Roboto,sans-serif;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   padding: 0;
-  color: #686868; }
-
-.container {
+  color: #686868;
+}
+.container{
   width: 1060px;
   position: relative;
   margin: 0 auto;
-  display: table; }
-
+  display: table;
+}
 .col-1,
 .col-2,
 .col-3,
@@ -29,67 +26,67 @@ body {
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12{
   float: left;
   box-sizing: border-box;
   padding: 0 15px;
-  display: table; }
-
+  display: table;
+}
 .col-12 {
-  width: 100%; }
-
+  width: 100%;
+}
 .col-11 {
-  width: 91.66666666666666%; }
-
+  width: 91.66666666666666%;
+}
 .col-10 {
-  width: 83.33333333333334%; }
-
+  width: 83.33333333333334%;
+}
 .col-9 {
-  width: 75%; }
-
+  width: 75%;
+}
 .col-8 {
-  width: 66.66666666666666%; }
-
+  width: 66.66666666666666%;
+}
 .col-7 {
-  width: 58.333333333333336%; }
-
+  width: 58.333333333333336%;
+}
 .col-6 {
-  width: 50%; }
-
+  width: 50%;
+}
 .col-5 {
-  width: 41.66666666666667%; }
-
+  width: 41.66666666666667%;
+}
 .col-4 {
-  width: 33.33333333333333%; }
-
+  width: 33.33333333333333%;
+}
 .col-3 {
-  width: 25%; }
-
+  width: 25%;
+}
 .col-2 {
-  width: 16.666666666666664%; }
-
+  width: 16.666666666666664%;
+}
 .col-1 {
-  width: 8.333333333333332%; }
-
-.align-vert {
+  width: 8.333333333333332%;
+}
+.align-vert{
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
+  transform: translateY(-50%);
+}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
   padding: 0 0 25px;
   margin: 0;
-  font-weight: 300; }
-
+  font-weight: 300;
+}
 select,
-input {
+input{
   display: table;
   box-sizing: border-box;
   padding: 10px;
@@ -99,8 +96,8 @@ input {
   width: 200px;
   outline: none;
   font-size: 16px;
-  color: #686868; }
-
+  color: #686868;
+}
 @media (max-width: 420px) {
   .col-1,
   .col-2,
@@ -113,12 +110,7 @@ input {
   .col-9,
   .col-10,
   .col-11,
-  .col-12 {
-    width: 100%; } }
-
-/*
-* Variable Styles
-*/
-/*
-* Navigation Styles
-*/
+  .col-12{
+   width: 100%;
+  }
+}

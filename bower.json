@@ -1,0 +1,12 @@
+{
+  "name": "League API",
+  "homepage": "",
+  "authors": [
+    "Edwil Jonas"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta"
+  }
+}
